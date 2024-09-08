@@ -12,6 +12,14 @@ class Node {
         this.nextNode = newNext;
     }
 
+    getNext() {
+        return this.nextNode;
+    }
+
+    getValue() {
+        return this.value;
+    }
+
     print() {
         console.log(`Node Value: ` + this.value);
         console.log(this.nextNode);
