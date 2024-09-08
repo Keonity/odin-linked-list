@@ -4,8 +4,16 @@ class Node {
         this.nextNode = nextNode;
     }
 
+    changeValue(newValue) {
+        this.value = newValue;
+    }
+
+    changeNext(newNext) {
+        this.nextNode = newNext;
+    }
+
     print() {
-        console.log(this.value);
+        console.log(`Node Value: ` + this.value);
         console.log(this.nextNode);
     }
 }
